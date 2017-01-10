@@ -1,0 +1,57 @@
+---
+---
+
+.site-footer {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+.site-footer-legal {
+    float: left;
+}
+
+.site-footer-nav {
+    float: right;
+}
+
+.octicon-mark-github {
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    margin-left: -12px;
+    font-size: 24px;
+    color: #ccc;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.octicon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+.text-muted {
+    color: inherit;
+    opacity: 0.8;
+}
+
+.readmore {
+    float: left;
+}
+
+[class*="container"] {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 980px;
+}
