@@ -1,8 +1,11 @@
 ---
-permalink: /json/posts
+permalink: /sitemap/xml
 ---
-[
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 	{% for post in site.posts %}
-	{url:"{{ post.url }}", tags:[{% for tag in post.tags %}"{{ tag }}",{% endfor %}]},
-	{% endfor %}
-]
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc> 
+  </url>
+  {% endfor %}
+</urlset>
