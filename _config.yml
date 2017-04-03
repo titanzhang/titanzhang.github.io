@@ -20,7 +20,7 @@ github_username:  titanzhang
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-architect
+theme: jekyll-theme-modernist
 gems:
   - jekyll-feed
 exclude:
