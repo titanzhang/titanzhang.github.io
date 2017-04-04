@@ -11,4 +11,5 @@ layout: default
 {{ post.excerpt | strip_html }}
 {% endif %}
 <span class="readmore">[Read more ...]({{ post.url }})</span>
+<hr/>
 {% endfor %}
