@@ -1,0 +1,23 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-size: 15px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 940px;
+   }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+p {
+    margin: 0 0 20px;
+}

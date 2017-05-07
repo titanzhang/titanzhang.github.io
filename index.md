@@ -2,14 +2,30 @@
 layout: default
 ---
 <a href="/my/resume.pdf" target="_blank" onclick="if (!ga) return true;ga('send','pageview','/my/resume.pdf');">About me</a> | [CS570 HW1](/my/cs_570_hw1.pdf)
-{% for post in site.posts limit:50 %}
+
+<hr/>
+<!-- Posts -->
+{% for post in site.posts limit:10 %}
 <h3>{{ post.title}}</h3>
-<div class="text-muted">[ {{ post.date | date: "%b %Y" }} ]</div>
+<p><span class="glyphicon glyphicon-time"></span>{{ post.date | date: "%b %Y" }}</p>
+<p>
 {% if post.description %}
 {{ post.description | markdownify }}
 {% else %}
 {{ post.excerpt | strip_html }}
 {% endif %}
-<span class="readmore">[Read more ...]({{ post.url }})</span>
-<hr/>
+</p>
+<a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+<hr>
 {% endfor %}
+
+<!-- Pager -->
+<!--ul class="pager">
+    <li class="previous">
+        <a href="#">&larr; Older</a>
+    </li>
+    <li class="next">
+        <a href="#">Newer &rarr;</a>
+    </li>
+</ul-->
+
