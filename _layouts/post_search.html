@@ -1,0 +1,11 @@
+---
+layout: default_search
+---
+<ol class="breadcrumb">
+{% for tags in page.tags %}
+	<li><a href="#" llink="search">{{ tags }}</a></li>
+{% endfor %}
+</ol>
+
+<div><h2>{{ page.title }}</h2></div>
+{{ content }}
