@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<!-- links -->
+**Personal projects**: [RevPrice](http://price.liangzhang.io) | [Algohub](http://algohub.me)
 <!-- Posts -->
 {% for post in site.posts limit:10 %}
 <h3>{{ post.title}}</h3>
@@ -25,4 +27,3 @@ layout: default
         <a href="#">Newer &rarr;</a>
     </li>
 </ul-->
-
